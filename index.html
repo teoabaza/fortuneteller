@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <script type = "text/javascript" src="./resources/js/script.js"></script>
+        <title>Fortune teller</title>
+    </head>
+
+    <body onload="document.body.style.opacity='1'">
+            <h1 class="welcome">Welcome to the Mysterious Fortune Teller</h1>
+
+            <section id="first">
+                <form id="askforname">
+                    <label for="name">What is your name, stranger?</label><br><br>
+                    <input type="text" id="name" value=""  onkeypress="sayHi(event)" placeholder="&nbsp;">
+                </form>
+                <div id="confirm">
+                    <p id="greeting">Hi!</p>
+                    <a href="#" onclick="randIntro(), displayMsg(), end()" id="button">Yes, hit me!</a>
+                </div>
+            </section>
+            <p id="introtext"> </p>
+            <p id="randomMsg"> </p>
+            <p id="final">Right then. There's something for you to think about. OK, bye bye now.</p>
+    </body>
+
+</html>
