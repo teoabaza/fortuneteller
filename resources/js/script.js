@@ -17,6 +17,7 @@ function sayHi(event) {
         document.getElementById('greeting').innerHTML = "Hi, " + name + "! Curious to see what lies ahead?";
         fade(document.getElementById('confirm'));
         fade(document.getElementById('askforname'));
+        event.preventDefault();
     }
 }
 
